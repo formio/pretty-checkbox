@@ -4,6 +4,10 @@
   "description": "Use pretty checkboxes with Form.io",
   "main": "lib/module.js",
   "module": "node",
+  "files": [
+    "dist",
+    "lib"
+  ],
   "scripts": {
     "build:templates": "gulp templates",
     "build:dist": "tsc && gulp copy-styles && webpack && webpack --config webpack.prod.js",
