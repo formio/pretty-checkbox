@@ -1,0 +1,41 @@
+{
+  "name": "@formio/pretty-checkbox",
+  "version": "1.0.0",
+  "description": "Use pretty checkboxes with Form.io",
+  "main": "index.js",
+  "scripts": {
+    "build:templates": "gulp templates",
+    "build:dist": "tsc && gulp copy-styles && webpack && webpack --config webpack.prod.js",
+    "build": "npm run build:templates && npm run build:dist && gulp minify-css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "peerDependencies": {
+    "formiojs": "^4.10.1"
+  },
+  "devDependencies": {
+    "@types/node-sass": "^4.11.1",
+    "css-loader": "^3.5.3",
+    "css-modules-typescript-loader": "^4.0.0",
+    "del": "^5.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-formio": "^1.1.4",
+    "eslint-loader": "^4.0.2",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-insert": "^0.5.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-template": "^5.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "pretty-checkbox": "^3.0.3",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
