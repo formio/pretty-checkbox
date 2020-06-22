@@ -21,7 +21,7 @@ Formio.use(FormioPrettyCheckbox);
 You will also need to add the styles like so.
 
 ```css
-@import '~@formio/pretty-checkbox/dist/formio-pretty-checkbox.css';
+@import '~@formio/pretty-checkbox/dist/formio-pretty-checkboxes.css';
 ```
 
 ## Extending
