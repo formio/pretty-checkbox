@@ -1,6 +1,6 @@
 {
   "name": "@formio/pretty-checkbox",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Use pretty checkboxes with Form.io",
   "main": "lib/module.js",
   "module": "node",
