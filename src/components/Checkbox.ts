@@ -27,32 +27,34 @@ export default class PrettyCheckbox extends CheckBoxComponent {
       thick: ''
     };
     if (this.component.customClass) {
-      this.component.customClass.match(/p-([^\s]+)/g, (match, item) => {
-        switch (item) {
-          case 'switch':
-            this._checkboxOptions.type = match;
-            return '';
-          case 'round':
-          case 'curve':
-            this._checkboxOptions.shape = match;
-            return '';
-          case 'fill':
-          case 'thick':
-            this._checkboxOptions.thick = match;
-            return '';
-          case 'none':
-            this._checkboxOptions.state = '';
-            return '';
-          case 'primary':
-          case 'warning':
-          case 'success':
-          case 'info':
-          case 'danger':
-            this._checkboxOptions.state = match;
-            return '';
-        }
-        return match;
-      });
+      const matches = this.component.customClass.match(/p-([^\s]+)/g);
+      if (matches && matches.length) {
+        matches.forEach((match) => {
+          switch (match) {
+            case 'p-switch':
+              this._checkboxOptions.type = match;
+              return '';
+            case 'p-round':
+            case 'p-curve':
+              this._checkboxOptions.shape = match;
+              return '';
+            case 'p-fill':
+            case 'p-thick':
+              this._checkboxOptions.thick = match;
+              return '';
+            case 'p-none':
+              this._checkboxOptions.state = '';
+              return '';
+            case 'p-primary':
+            case 'p-warning':
+            case 'p-success':
+            case 'p-info':
+            case 'p-danger':
+              this._checkboxOptions.state = match;
+              return '';
+          }
+        });
+      }
     }
     return this._checkboxOptions;
   }
