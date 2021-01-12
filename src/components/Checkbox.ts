@@ -16,6 +16,16 @@ export default class PrettyCheckbox extends CheckBoxComponent {
     return `state ${options.state}`;
   }
 
+  get isIcon() {
+    const options = this.checkboxOptions;
+    return !!options.icon;
+  }
+
+  get iconClasses() {
+    const options = this.checkboxOptions;
+    return `icon fa fa-${options.icon}`;
+  }
+
   get checkboxOptions() {
     if (this._checkboxOptions) {
       return this._checkboxOptions;
@@ -24,8 +34,10 @@ export default class PrettyCheckbox extends CheckBoxComponent {
       type: 'p-default',
       state: 'p-primary',
       shape: '',
-      thick: ''
+      thick: '',
+      icon: '',
     };
+    const iconPrefix = 'icon-';
     if (this.component.customClass) {
       const matches = this.component.customClass.match(/p-([^\s]+)/g);
       if (matches && matches.length) {
@@ -54,6 +66,16 @@ export default class PrettyCheckbox extends CheckBoxComponent {
               return '';
           }
         });
+      }
+
+      const classes = this.component.customClass.split(' ');
+      const icon = classes.find(cls => cls.startsWith(iconPrefix));
+      if (icon) {
+        const iconClass = icon.substring(iconPrefix.length);
+        if (iconClass) {
+          this._checkboxOptions.type = 'p-icon';
+          this._checkboxOptions.icon = iconClass;
+        }
       }
     }
     return this._checkboxOptions;
