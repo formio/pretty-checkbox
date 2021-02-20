@@ -4,6 +4,8 @@ export default class PrettyCheckbox extends CheckBoxComponent {
     constructor(component: any, options: any, data: any);
     get checkboxClasses(): string;
     get stateClasses(): string;
+    get isIcon(): boolean;
+    get iconClasses(): string;
     get checkboxOptions(): any;
 }
 export {};
