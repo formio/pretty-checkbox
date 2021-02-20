@@ -5,7 +5,11 @@
     {% } %}
     {% if (ctx.checked) { %}checked=true{% } %}
     ></{{ctx.input.type}}>
+
     <div class="{{ ctx.instance.stateClasses }}">
+        {% if (ctx.instance.isIcon) { %}
+            <i class="{{ ctx.instance.iconClasses }}"></i>
+        {% } %}
         <label class="control-label form-check-label"></label>
     </div>
 </div>
