@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: path.join(path.resolve(__dirname, 'lib'), 'module.js'),
   output: {
-    library: 'formio-pretty-checkboxes',
+    library: 'FormioPrettyCheckboxes',
     libraryTarget: 'umd',
     libraryExport: 'default',
     path: path.resolve(__dirname, 'dist'),

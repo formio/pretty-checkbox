@@ -34,6 +34,5 @@ Formio.use(FormioPrettyCheckbox);
 
 const PrettyCheckbox = FormioPrettyCheckbox.components.checkbox;
 
-export default class CustomCheckbox extends PrettyCheckbox {
-}
+export default class CustomCheckbox extends PrettyCheckbox {}
 ```
