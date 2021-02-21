@@ -1,2 +1,5 @@
-declare const _default: import("formiojs").ClassWithEditForm<typeof import("formiojs/types/components/_classes/field/field").Field>;
-export default _default;
+declare const SelectBoxesComponent: any;
+export default class PrettySelectBoxesComponent extends SelectBoxesComponent {
+    constructor(component: any, options: any, data: any);
+}
+export {};

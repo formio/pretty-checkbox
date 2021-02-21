@@ -1,7 +1,9 @@
 import PrettyCheckbox from './Checkbox';
+import PrettyRadio from './Radio';
+import PrettySelectBoxesComponent from './SelectBoxes';
 declare const _default: {
     checkbox: typeof PrettyCheckbox;
-    radio: import("formiojs").ClassWithEditForm<typeof import("formiojs/types/components/_classes/field/field").Field>;
-    selectboxes: import("formiojs").ClassWithEditForm<typeof import("formiojs/types/components/_classes/field/field").Field>;
+    radio: typeof PrettyRadio;
+    selectboxes: typeof PrettySelectBoxesComponent;
 };
 export default _default;

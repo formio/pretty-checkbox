@@ -1,6 +1,6 @@
 {
   "name": "@formio/pretty-checkbox",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Use pretty checkboxes with Form.io",
   "main": "lib/module.js",
   "module": "node",
@@ -18,7 +18,7 @@
   "license": "MIT",
   "dependencies": {},
   "peerDependencies": {
-    "formiojs": "^4.10.1"
+    "formiojs": "^4.12.7"
   },
   "devDependencies": {
     "@types/node-sass": "^4.11.1",

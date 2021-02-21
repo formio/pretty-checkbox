@@ -2,8 +2,8 @@ import './sass/formio-pretty-checkbox.scss';
 declare const _default: {
     components: {
         checkbox: typeof import("./components/Checkbox").default;
-        radio: import("formiojs").ClassWithEditForm<typeof import("formiojs/types/components/_classes/field/field").Field>;
-        selectboxes: import("formiojs").ClassWithEditForm<typeof import("formiojs/types/components/_classes/field/field").Field>;
+        radio: typeof import("./components/Radio").default;
+        selectboxes: typeof import("./components/SelectBoxes").default;
     };
     templates: {
         bootstrap: {

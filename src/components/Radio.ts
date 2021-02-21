@@ -1,4 +1,9 @@
 import { Components } from 'formiojs';
 import prettify from './prettify';
-prettify(Components.components.radio, true);
-export default Components.components.radio;
+const RadioComponent: any = Components.components.radio;
+export default class PrettyRadioComponent extends RadioComponent {
+    constructor(component, options, data) {
+        super(component, options, data);
+    }
+}
+prettify(PrettyRadioComponent, true);
