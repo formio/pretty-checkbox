@@ -19,7 +19,7 @@
             {% if (ctx.instance.isIcon) { %}
                 <i class="{{ ctx.instance.iconClasses }}"></i>
             {% } %}
-            {% if (!ctx.self.labelIsHidden()) { %}<label class="control-label form-check-label">{{ctx.t(item.label, { _userInput: true })}}</label>{% } %}
+            <label class="control-label form-check-label">{% if (!ctx.self.labelIsHidden()) { %}{{ctx.t(item.label, { _userInput: true })}}{% } %}</label>
         </div>
     </div>
     {% if (!ctx.component.inline) { %}<div style="clear:both; margin-bottom: 0.5em;"></div>{% } %}

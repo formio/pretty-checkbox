@@ -9,6 +9,6 @@
         {% if (ctx.instance.isIcon) { %}
             <i class="{{ ctx.instance.iconClasses }}"></i>
         {% } %}
-        {% if (!ctx.self.labelIsHidden()) { %}<label class="control-label form-check-label">{{ ctx.input.label }}</label>{% } %}
+        <label class="control-label form-check-label">{% if (!ctx.self.labelIsHidden()) { %}{{ ctx.input.label }}{% } %}</label>
     </div>
 </div>
