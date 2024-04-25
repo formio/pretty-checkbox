@@ -1,9 +1,5 @@
-import { Components } from 'formiojs';
+import { Components } from '@formio/js';
 import prettify from './prettify';
 const SelectBoxesComponent: any = Components.components.selectboxes;
-export default class PrettySelectBoxesComponent extends SelectBoxesComponent {
-    constructor(component, options, data) {
-        super(component, options, data);
-    }
-}
+export default class PrettySelectBoxesComponent extends SelectBoxesComponent {}
 prettify(SelectBoxesComponent);

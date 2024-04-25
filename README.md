@@ -13,7 +13,7 @@ npm install --save @formio/pretty-checkbox
 To enable this for all rendered forms in your application, do the following.
 
 ```js
-import { Formio } from 'formiojs';
+import { Formio } from '@formio/js';
 import FormioPrettyCheckbox from '@formio/pretty-checkbox';
 Formio.use(FormioPrettyCheckbox);
 ```
@@ -28,7 +28,7 @@ You will also need to add the styles like so.
 You can also use the class to create your own extended Checkbox classes that use the Pretty Checkbox.
 
 ```js
-import { Formio } from 'formiojs';
+import { Formio } from '@formio/js';
 import FormioPrettyCheckbox from '@formio/pretty-checkbox';
 Formio.use(FormioPrettyCheckbox);
 

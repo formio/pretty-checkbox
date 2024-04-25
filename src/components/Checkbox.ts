@@ -1,9 +1,5 @@
-import { Components } from 'formiojs';
+import { Components } from '@formio/js';
 import prettify from './prettify';
 const CheckBoxComponent: any = Components.components.checkbox;
-export default class PrettyCheckbox extends CheckBoxComponent {
-    constructor(component, options, data) {
-        super(component, options, data);
-    }
-}
+export default class PrettyCheckbox extends CheckBoxComponent {}
 prettify(PrettyCheckbox);
