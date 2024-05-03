@@ -1,6 +1,6 @@
 {
   "name": "@formio/pretty-checkbox",
-  "version": "2.0.0-rc.1",
+  "version": "2.0.0-rc.2",
   "description": "Use pretty checkboxes with Form.io",
   "main": "lib/module.js",
   "module": "node",
@@ -24,9 +24,9 @@
     "@formio/js": "^5.0.0-rc.47"
   },
   "devDependencies": {
-    "@formio/js": "^5.0.0-rc.47",
+    "@formio/js": "^5.0.0-rc.48",
     "del": "^7.1.0",
-    "eslint": "^9.1.1",
+    "eslint": "^9.2.0",
     "eslint-config-formio": "^1.1.4",
     "eslint-loader": "^4.0.2",
     "gulp": "^5.0.0",
@@ -35,7 +35,7 @@
     "gulp-template": "5.0.0",
     "pretty-checkbox": "^3.0.3",
     "ts-loader": "^9.5.1",
-    "typescript": "5.3.3",
+    "typescript": "5.4.5",
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4"
   }

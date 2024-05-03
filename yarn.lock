@@ -46,10 +46,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@eslint/js@9.1.1":
-  version "9.1.1"
-  resolved "https://registry.npmjs.org/@eslint/js/-/js-9.1.1.tgz#eb0f82461d12779bbafc1b5045cde3143d350a8a"
-  integrity sha512-5WoDz3Y19Bg2BnErkZTp0en+c/i9PvgFS7MBe1+m60HjFr0hrphlAGp4yzI7pxpt4xShln4ZyYp4neJm8hmOkQ==
+"@eslint/js@9.2.0":
+  version "9.2.0"
+  resolved "https://registry.npmjs.org/@eslint/js/-/js-9.2.0.tgz#b0a9123e8e91a3d9a2eed3a04a6ed44fdab639aa"
+  integrity sha512-ESiIudvhoYni+MdsI8oD7skpprZ89qKocwRM2KEvhhBJ9nl5MRh7BXU5GTod7Mdygq+AUl+QzId6iWJKR/wABA==
 
 "@formio/bootstrap@^3.0.0-rc.24":
   version "3.0.0-rc.21-dev.90.e1f0b93"
@@ -65,10 +65,10 @@
     fuse.js "^6.6.2"
     redux "^4.2.0"
 
-"@formio/core@^2.1.0-dev.tt.3":
-  version "2.1.0-dev.tt.3"
-  resolved "https://registry.npmjs.org/@formio/core/-/core-2.1.0-dev.tt.3.tgz#ac042f5f8ff49d888f134cedea8e81494546fa7f"
-  integrity sha512-fKyCaMIvGvvwOheFCQjwCtGfjHzD4dILQyHkING470sPpxjDr3tVaoi2X8Pk+qiHrRv+XuUkcSCXEw/zlOLc4w==
+"@formio/core@^2.1.0-dev.tt.4":
+  version "2.1.0-dev.tt.4"
+  resolved "https://registry.npmjs.org/@formio/core/-/core-2.1.0-dev.tt.4.tgz#dd6363a70da25645401db4189c730c9499b95fb3"
+  integrity sha512-d7cuJtwU0AiCG5M6Eg6o+5SI5fyfnViyDBqhBOdIhxw0UjKmbFUYavHnTSKMQK4T4stnrtWJpkUtrRGCIP8qng==
   dependencies:
     "@types/json-logic-js" "^2.0.7"
     browser-cookies "^1.2.0"
@@ -83,14 +83,14 @@
     lodash "^4.17.21"
     moment "^2.29.4"
 
-"@formio/js@^5.0.0-rc.47":
-  version "5.0.0-rc.47"
-  resolved "https://registry.npmjs.org/@formio/js/-/js-5.0.0-rc.47.tgz#20324a53871c5d1dbf6427fe8aa0334d340d79b7"
-  integrity sha512-RtRLotDtWn0jmDokSoCK81E9TUXw5yduMbGbtB89fE7bvHOPT+zcuTnzpltrL19r/vxLleD524h8lM/K1lTVug==
+"@formio/js@^5.0.0-rc.48":
+  version "5.0.0-rc.48"
+  resolved "https://registry.npmjs.org/@formio/js/-/js-5.0.0-rc.48.tgz#0773219271dd7d8fa46163212f044cf8b1c7790c"
+  integrity sha512-dx7cEVVTJW38bMnlieF9+DhbKZWWwI/QEqwnsDM1idrjxnQnxa4XMdxs5G5qsqQoXeaPaRJKmB+H6L+2Fa8QaQ==
   dependencies:
     "@formio/bootstrap" "^3.0.0-rc.24"
     "@formio/choices.js" "^10.2.1"
-    "@formio/core" "^2.1.0-dev.tt.3"
+    "@formio/core" "^2.1.0-dev.tt.4"
     "@formio/text-mask-addons" "^3.8.0-formio.2"
     "@formio/vanilla-text-mask" "^5.1.1-formio.1"
     abortcontroller-polyfill "^1.7.5"
@@ -1063,15 +1063,15 @@ eslint-visitor-keys@^4.0.0:
   resolved "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-4.0.0.tgz#e3adc021aa038a2a8e0b2f8b0ce8f66b9483b1fb"
   integrity sha512-OtIRv/2GyiF6o/d8K7MYKKbXrOUBIK6SfkIRM4Z0dY3w+LiQ0vy3F57m0Z71bjbyeiWFiHJ8brqnmE6H6/jEuw==
 
-eslint@^9.1.1:
-  version "9.1.1"
-  resolved "https://registry.npmjs.org/eslint/-/eslint-9.1.1.tgz#39ec657ccd12813cb4a1dab2f9229dcc6e468271"
-  integrity sha512-b4cRQ0BeZcSEzPpY2PjFY70VbO32K7BStTGtBsnIGdTSEEQzBi8hPBcGQmTG2zUvFr9uLe0TK42bw8YszuHEqg==
+eslint@^9.2.0:
+  version "9.2.0"
+  resolved "https://registry.npmjs.org/eslint/-/eslint-9.2.0.tgz#0700ebc99528753315d78090876911d3cdbf19fe"
+  integrity sha512-0n/I88vZpCOzO+PQpt0lbsqmn9AsnsJAQseIqhZFI8ibQT0U1AkEKRxA3EVMos0BoHSXDQvCXY25TUjB5tr8Og==
   dependencies:
     "@eslint-community/eslint-utils" "^4.2.0"
     "@eslint-community/regexpp" "^4.6.1"
     "@eslint/eslintrc" "^3.0.2"
-    "@eslint/js" "9.1.1"
+    "@eslint/js" "9.2.0"
     "@humanwhocodes/config-array" "^0.13.0"
     "@humanwhocodes/module-importer" "^1.0.1"
     "@humanwhocodes/retry" "^0.2.3"
@@ -2721,10 +2721,10 @@ type-func@^1.0.1:
   resolved "https://registry.npmjs.org/type-func/-/type-func-1.0.3.tgz#ab184234ae80d8d50057cefeff3b2d97d08ae9b0"
   integrity sha512-YA90CUk+i00tWESPNRMahywXhAz+12NLJLKlOWrgHIbqaFXjdZrWstRghaibOW/IxhPjui4SmXxO/03XSGRIjA==
 
-typescript@5.3.3:
-  version "5.3.3"
-  resolved "https://registry.npmjs.org/typescript/-/typescript-5.3.3.tgz#b3ce6ba258e72e6305ba66f5c9b452aaee3ffe37"
-  integrity sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==
+typescript@5.4.5:
+  version "5.4.5"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-5.4.5.tgz#42ccef2c571fdbd0f6718b1d1f5e6e5ef006f611"
+  integrity sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==
 
 unc-path-regex@^0.1.2:
   version "0.1.2"
