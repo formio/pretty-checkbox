@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "preserveConstEnums": true,
     "outDir": "lib",
     "noImplicitAny": false,
@@ -9,6 +9,7 @@
     "rootDir": "src",
     "module": "es6",
     "moduleResolution": "node",
+    "skipLibCheck": true,
     "lib": [
       "es2015",
       "dom"
